@@ -36,6 +36,11 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+/**
+ * 基于用户的协同过滤
+ * 直接调用Mahout相关接口即可
+ * 选择不同的用户相似度度量方法，这里选择了基于谷本系数、基于对数似然和基于曼哈顿距离
+ */
 @Log4j
 @Service
 public class UserCFRecommenderServiceImpl implements UserCFRecommenderService {

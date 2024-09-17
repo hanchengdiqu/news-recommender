@@ -19,6 +19,12 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 基于内容的推荐
+ * 对新闻文本进行分词
+ * 调用Deeplearning4j中构建paragraphvector的方法，通过doc2vec构建VSM
+ * 用Gensim会更方便点
+ */
 @Log4j
 public class TrainVsmModel {
 

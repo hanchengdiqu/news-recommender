@@ -25,6 +25,11 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+/**
+ * 基于热点的推荐
+ * 统计最高浏览量
+ * 过滤一定时间前的新闻保证热点的准确
+ */
 @Log4j
 @Service
 public class HotRecommenderServiceImpl implements HotRecommenderService {

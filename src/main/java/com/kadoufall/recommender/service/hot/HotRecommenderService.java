@@ -7,7 +7,6 @@ import java.util.Map;
 
 public interface HotRecommenderService {
     List<Long> recommend(long userId);
-
     List<News> recommendNews(long userId);
     Map<String, Double> evaluate();
 
